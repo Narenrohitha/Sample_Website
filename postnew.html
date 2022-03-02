@@ -1,0 +1,186 @@
+{% extends 'main/base.html' %}
+{% load static %}
+
+{% block content %}
+
+
+
+<div
+  class="bg-image p-5 text-center shadow-1-strong rounded mb-5 text-white"
+  style="background-image: url('https://mdbcdn.b-cdn.net/img/new/slides/003.webp');"
+>
+
+
+
+<div id="intro" class="bg-image shadow-2-strong">
+      <div class="mask" style="background-color: rgba(0, 0, 0, 0.8);">
+        <div class="container d-flex align-items-center justify-content-center text-center h-100">
+          <div class="text-white">
+            <h1 class="mb-3">Learn Pogram</h1>
+            <h5 class="mb-4">Best & free guide of responsive web design</h5>
+            <a class="btn btn-outline-light btn-lg m-2" href="" role="button"
+              rel="nofollow" target="_blank">Start tutorial</a>
+            <a class="btn btn-outline-light btn-lg m-2" href="" target="_blank"
+              role="button">Download MDB UI KIT</a>
+          </div>
+        </div>
+      </div>
+    </div> 
+
+
+
+
+
+<main class="mt-5">
+    <div class="container">
+      <!--Section: Content-->
+      <section>
+        <div class="row">
+          <div class="col-md-6 gx-5 mb-4">
+            <div class="bg-image hover-overlay ripple shadow-2-strong" data-mdb-ripple-color="light">
+              
+              <a href="#!">
+                <div class="mask" style="background-color: rgba(251, 251, 251, 0.15);"></div>
+              </a>
+            </div>
+          </div>
+
+
+
+
+         <!--Section: Content-->
+
+      <hr class="my-5" />
+
+      <!--Section: Content-->
+      <section class="text-center">
+        <h4 class="mb-5"><strong>Top 3 programs</strong></h4>
+
+        <div class="row">
+          <div class="col-lg-4 col-md-12 mb-4">
+            <div class="card">
+              <div class="bg-image hover-overlay ripple" data-mdb-ripple-color="light">
+                <img src="{% static 'main/IMG_20220225_145511.jpg' %}" width= "350" height="300">
+                <a href="#!">
+                  <div class="mask" style="background-color: rgba(251, 251, 251, 0.15);"></div>
+                </a>
+              </div>
+              <div class="card-body">
+                <h5 class="card-title">What is c++ ?</h5>
+                <p class="card-text">
+                  C++ is a cross-platform language that can be used to create high-performance applications.
+C++ was developed by Bjarne Stroustrup, as an extension to the C language.
+C++ gives programmers a high level of control over system resources and memory.
+The language was updated 3 major times in 2011, 2014, and 2017 to C++11, C++14, and C++17.
+                </p>
+                <a href="#!" class="btn btn-primary">Click to view</a>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6 mb-4">
+            <div class="card">
+              <div class="bg-image hover-overlay ripple" data-mdb-ripple-color="light">
+                <img src="{% static 'main/IMG_20220225_145051.jpg' %}" width= "350" height="300">
+                <a href="#!">
+                  <div class="mask" style="background-color: rgba(251, 251, 251, 0.15);"></div>
+                </a>
+              </div>
+              <div class="card-body">
+                <h5 class="card-title">What is Java?</h5>
+                <p class="card-text">
+                  Java is an object-oriented programming language that produces software for multiple platforms. When a programmer writes a Java application, the compiled code (known as bytecode) runs on most operating systems (OS), including Windows, Linux and Mac OS.
+                </p>
+                <a href="#!" class="btn btn-primary">Click to view</a>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6 mb-4">
+            <div class="card">
+              <div class="bg-image hover-overlay ripple" data-mdb-ripple-color="light">
+                <img src="{% static 'main/IMG_20220225_143431.jpg' %}" width= "" height="300">
+                <a href="#!">
+                  <div class="mask" style="background-color: rgba(251, 251, 251, 0.15);"></div>
+                </a>
+              </div>
+              <div class="card-body">
+                <h5 class="card-title">What is database management?</h5>
+                <p class="card-text">
+                  What is database management system explain? A database management system (or DBMS) is essentially nothing more than a computerized data-keeping system. Users of the system are given facilities to perform several kinds of operations on such a system for either manipulation of the data in the database or the management of the database structure itself.
+                </p>
+                <a href="#!" class="btn btn-primary">Click to view</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!--Section: Content-->
+
+      <hr class="my-5" />
+
+      <!--Section: Content-->
+      <section class="mb-5">
+        <h4 class="mb-5 text-center"><strong>Personal detail</strong></h4>
+
+        <div class="row d-flex justify-content-center">
+          <div class="col-md-6">
+            <form>
+              <!-- 2 column grid layout with text inputs for the first and last names -->
+              <div class="row mb-4">
+                <div class="col">
+                  <div class="form-outline">
+                    <input type="text" id="form3Example1" class="form-control" />
+                    <label class="form-label" for="form3Example1">First name</label>
+                  </div>
+                </div>
+                <div class="col">
+                  <div class="form-outline">
+                    <input type="text" id="form3Example2" class="form-control" />
+                    <label class="form-label" for="form3Example2">Last name</label>
+                  </div>
+                </div>
+              </div>
+
+
+
+
+              <div class="">
+                <input type="" id="" class="" />
+                <label class="">Email address</label>
+              </div>
+              <br>
+
+                  
+               <div class="">
+                <input type="" id="" class="" />
+                <label class="" for="">Password</label>
+              </div>
+              <br>
+
+                  <button type="submit" class="btn btn-primary btn-block mb-4">
+                Sign up
+              </button>
+                </label>
+              </div>
+
+
+
+
+               <!--Main layout-->
+
+  <!--Footer-->
+  <footer class="bg-light text-lg-start">
+    <div class="py-4 text-center">
+
+    </div>
+
+    <hr class="m-0" />
+
+    <div class="text-center py-4 align-items-center">
+      <p>Follow Naren on social media</p>
+      </a>
+    </div>
+  <!--Footer-->
+{% endblock %}
+

@@ -1,0 +1,86 @@
+{% extends 'main/base.html' %}
+{% block content %}
+{% load static %}
+{% for post in object_list %}
+
+
+
+<nav class="navbar navbar-expand-lg navbar-dark bg-primary">
+  <div class="container-fluid">
+    <a class="navbar-brand" href="#">Naren page</a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+<br>
+
+    <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+      <div class="navbar-nav">
+        <a class="nav-link active" aria-current="page" href="#">Home</a>
+        <a class="nav-link" href="#">Blog</a>
+        <a class="nav-link" href="#">Contact</a>
+      </div>
+    </div>
+  </div>
+</nav>
+
+
+
+<div
+  class="bg-image p-5 text-center shadow-1-strong rounded mb-5 text-white"
+  style="background-image: url('https://mdbcdn.b-cdn.net/img/new/slides/003.webp');"
+>
+  <h1 class="mb-3 h2">What is programming language?</h1>
+
+  <p>
+   A programming language is a vocabulary and set of grammatical rules for instructing a computer or computing device to perform specific tasks. ... Each language has a unique set of keywords (words that it understands) and a special syntax for organizing program instructions.
+  </p>
+</div>
+
+
+<body id="body-pd">
+    <header class="header" id="header">
+        <div class="header_toggle"> <i class='bx bx-menu' id="header-toggle"></i> </div>
+        <div class="header_img"> <img src="https://i.imgur.com/hczKIze.jpg" alt=""> </div>
+    </header>
+    <div class="l-navbar" id="nav-bar">
+        <nav class="nav">
+            <div> <a href="#" class="nav_logo"> <i class='bx bx-layer nav_logo-icon'></i> <span class="nav_logo-name">Explore the world</span> </a>
+                <div class="nav_list"> <a href="#" class="nav_link active"> <i class='bx bx-grid-alt nav_icon'></i> <span class="nav_name">Dashboard</span> </a> <a href="#" class="nav_link"> <i class='bx bx-user nav_icon'></i> <span class="nav_name">Users</span> </a> <a href="#" class="nav_link"> <i class='bx bx-message-square-detail nav_icon'></i> <span class="nav_name">Certificate</span> </a> <a href="#" class="nav_link"> <i class='bx bx-bookmark nav_icon'></i> <span class="nav_name">Bookmark</span> </a> <a href="#" class="nav_link"> <i class='bx bx-folder nav_icon'></i> <span class="nav_name">Files</span> </a> <a href="#" class="nav_link"> <i class='bx bx-bar-chart-alt-2 nav_icon'></i> <span class="nav_name">Status</span> </a> </div>
+            </div> <a href="#" class="nav_link"> <i class='bx bx-log-out nav_icon'></i> <span class="nav_name">SignOut</span> </a>
+        </nav>
+    </div>
+    <!--Container Main start-->
+    <div class="height-100 bg-light">
+        <h4>Main Components</h4>
+    </div>
+ <footer class="bg-light text-lg-start">
+    <div class="py-4 text-center">
+
+    </div>
+<br>
+
+    <hr class="m-0" />
+
+    <div class="text-center py-4 align-items-center">
+      <p>Follow Naren on social media</p>
+      </a>
+    </div>
+
+</div>
+<div class="card">
+<div class="card text-center">
+  <h5 class="card-header">{{post.date}}</h5>
+  <div class="card-header">
+  </div>
+  <div class="card-body">
+  	<h5 class="card-title">{{post.title}}</h5>
+    <p class="card-text">{{post.description}}</p>
+    <a href="/blog/{{post.id}}" class="btn btn-primary">Go somewhere</a>
+  </div>
+
+  <br>
+  <div class="card-footer text-muted">
+  </div>
+</div>
+{% endfor %}
+{% endblock %}
